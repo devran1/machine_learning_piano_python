@@ -35,7 +35,7 @@ def read_it(file):
 
 import os
 
-path="./"
+path="./midi_files/"
 files=[i for i in os.listdir(path) if i.endswith(".mid")]
 #print(files)
 notes_array=np.array([read_it(path+i) for i in files], dtype=object)
